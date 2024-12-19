@@ -1,0 +1,162 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch+Pop&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch+Pop&family=Stick+No+Bills:wght@200..800&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap"
+            rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+        
+        <!-- For better support across various browsers and devices -->
+        {% comment %} <link rel="apple-touch-icon" sizes="180x180" href="path/to/your/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="path/to/your/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="path/to/your/favicon-16x16.png">
+        <link rel="manifest" href="path/to/your/site.webmanifest">  {% endcomment %}
+        <title >Home page</title>
+
+
+
+        
+
+        <link rel="stylesheet" href="{% static 'logincss.css' %}">
+        
+
+    
+    
+    </head>
+    <body>
+    
+    
+       
+        <div class="blur">
+        <div class="logo">
+            <img src="{% static 'images/zlogo.png' %}" alt="logo" width="50px" hight="50px">
+        </div>
+        <div class="lgname">
+            <p>ZORO MUSIC</p>
+        </div>
+        <div class="signbtn">
+            <a href="{% url 'login' %}">
+            <button>LOGIN</button>
+        </a> 
+        </div>
+         
+     
+    </div>
+    <!-- ---------------------------------------------------------------music animation --------------------------------------------- -->
+    <div class="loader">
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        
+        
+
+    </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="container">
+        
+            <div class="p1" >
+                <p>TOP MUSIC</p>
+
+            </div>
+            <div class="p2">
+                <p>Trending Songs ‎ ‎ ‎ ♪ </p>
+                <p>Top Artist</p>
+                <p>All Your Favourite</p>
+            </div>
+
+            <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+            <div class="slider-frame">
+            <div class="slider-image">
+                <div class="slides">
+                    <img src="{% static 'images/girl.png' %}" alt="limg1" width="500px" hight="500px">
+                </div>
+                <div class="slides">
+                    <img src="{% static 'images/listn2.png' %}" alt="limg2" width="350px"
+                        hight="450px">
+                    </div>
+            
+            <div class="slides">
+                    <img src="{% static 'images/listn3.png' %}" alt="limg2" width="500px"
+                        hight="500px">
+                    </div>
+                    <!-- l------------------------------------------------------------------------------------------------------------------ -->
+                    <div class="slides2">
+
+                    <img src="{% static 'images/musicnote.png' %}" alt="nname1" width="300px"
+                        height="300px">
+                    </div>
+                    <div class="slides2">
+                    <img src="{% static 'images/mus2.png' %}" alt="nname2" width="300px"
+                        height="300px">
+                    </div>
+                    <div class="slides2">
+                    <img src="{% static 'images/mus3.png' %}" alt="nname2" width="300px"
+                        height="300px">
+                    </div>
+                   
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <script src="{% static 'script.js' %}"></script>
+    </body>
+
+</html>

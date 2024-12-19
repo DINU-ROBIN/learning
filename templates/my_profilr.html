@@ -1,0 +1,18 @@
+<h1>{{ user.username }}</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="profile_picture">
+    <button type="submit">Upload Profile Picture</button>
+</form>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="music_file">
+    <button type="submit">Upload Music</button>
+</form>
+<h2>My Music</h2>
+{% for song in music %}
+    <p>{{ song.title }}</p>
+    <audio controls>
+        <source src="{{ song.file.url }}" type="audio/mpeg">
+    </audio>
+{% endfor %}

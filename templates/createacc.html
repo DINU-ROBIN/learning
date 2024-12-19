@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE ACCOUNT</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{%  static 'for.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- -------------------------------------------------------music waves------------------------------------------------- -->
+    <div class="loader">
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        <span class="strok"></span>
+        
+    </div>
+    <!-- ---------------------------------------------------------form------------------------------------------------------------- -->
+    <div class="wrapper">
+        <form action="#" method="post">
+            {% csrf_token %}
+            <h1>CREATE ACCOUNT</h1>
+            <div class="inputbox">
+                <input type="text" placeholder="username" name="username" required>
+                <i id="i1" class='bx bxs-user-circle'></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="password" id="password" name="userpassword" required>
+                <i id="i2" class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="confirm password" id="confirm_password" required>
+            </div>
+            {% comment %} <a href=""> {% endcomment %}
+                {% for message in messages %}
+                <li class="{{ message.tags }}">{{ message }}</li>
+                {% endfor %}
+        
+            <button type="submit" class="btn">create</button>
+            
+        </form>
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
